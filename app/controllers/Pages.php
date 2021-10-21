@@ -1,9 +1,18 @@
 <?php
 
-class Pages
+class Pages extends Controller
 {
   public function __construct()
   {
-    echo "Loaded";
+  }
+
+  public function index()
+  {
+    $this->view("pages/index");
+  }
+
+  public function about()
+  {
+    echo "About";
   }
 }
